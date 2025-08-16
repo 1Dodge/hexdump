@@ -45,7 +45,7 @@ You can use `-s`, `-n` and `-e` in different combinations:
 
 7. `-s -n -e`: Using **all address related** arguments **at the same time** results in **UB[^2]** and is therefore an **invalid argument combination**.
 
-Notice: You can pass the value of `-s`, `-n` or `-e` either in decimal (eg: `-n 256`) or hex (eg: `-s 0x100`).
+Notice: You can pass the value of `-s`, `-n` or `-e` either in decimal (eg: `-n 256`) or hex (eg: `-s 0x100`). Also, the amount of digits of the Base Address print changes dynamically but has at least 4 digits.
 
 ## Examples
 #### First lets dump a text file with plain style:
