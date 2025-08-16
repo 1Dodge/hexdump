@@ -302,9 +302,9 @@ impl Dump {
             }
             // no -s val, -n val, -e val args were passed (do nothing, use vals from new())
             (None, None, None) => {}
-            // ERROR: all -s val, -n val, -e val args were passed (unallowed use of args)
+            // ERROR: all -s val, -n val, -e val args were passed (invalid use of args)
             _ => {
-                println_error!("Error: unallowed use of args (-s, -n, -e)");
+                println_error!("Error: invalid use of args (-s, -n, -e)");
                 println_info!("----------------------Usage----------------------");
                 println_info!("-s:    Prints data from address -s to end of file");
                 println_info!("-n:    Prints -n bytes starting from address 0");
@@ -312,7 +312,7 @@ impl Dump {
                 println_info!("-s -n: Prints -n bytes starting from address -s");
                 println_info!("-s -e: Prints data from address -s to address -e");
                 println_info!("-n -e: Prints -n bytes back from address -e");
-                println_error!("-s -n -e: UNALLOWED COMBINATION");
+                println_error!("-s -n -e: INVALID COMBINATION");
                 std::process::exit(1);
             }
         };
