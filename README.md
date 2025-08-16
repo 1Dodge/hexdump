@@ -1,7 +1,7 @@
 # hexdump: A tool with a lot of features
 I am a windows user and it botheres me, that there is no native hexdump tool. So i decided to make my own, even better one! The tool is completely written in **[Rust](https://github.com/rust-lang/rust)** and it was a great learning experience.
 ## Install
-You can either download the latest released pre-compiled binaries or compile the tool yourself. (When you build it yourself, you have to build the release using `cargo build --release`).<br>
+You can either download the [latest](https://github.com/1Dodge/hexdump/releases) released pre-compiled binaries or compile the tool yourself. (When you build it yourself, you have to build the release using `cargo build --release`).<br>
 After building or downloading the pre-compiled binaries, move the `hexdump.exe` into a distinct folder. For example: `C:\Users\<you>\Documents\hexdumpTool`.<br>
 Then add that folder path to your **Environment Variables**, so you can use the tool in your cmd/powershell/terminal.
 ## How to use
