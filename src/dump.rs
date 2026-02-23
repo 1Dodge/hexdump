@@ -1,5 +1,4 @@
 use crate::Cli;
-#[cfg(windows)]
 use crate::color::*;
 use std::fs;
 
